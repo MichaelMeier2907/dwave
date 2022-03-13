@@ -1,4 +1,5 @@
 # exactly two problem: two of three qbits have to be one
+# runs on the exact solver
 # import
 import dimod
 # assign variable exactsolver
