@@ -1,4 +1,4 @@
-# lowest energy if the two of two qbits have the same value
+# lowest energy if the two of two qbits have different values
 #import
 import dimod
 # assign to variable exactsolver
