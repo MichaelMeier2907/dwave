@@ -9,3 +9,5 @@ programs to run on dwave qpu, exactsolver or hybrid solver
 6. onehotqpu.py        QPU:          lowest energy if 1 of 3 qbits has value 1
 7. twohot.py           Exact solver: lowest energy if 2 of 3 qbits have value 1
 8. twohotqpu.py        QPU:          lowest energy if 2 of 3 qbits have value 1
+9. samllestsum.py      Exact solver: choose two numbers of 17,19,21 with the smallest sum
+10. smallessumqpu.py   QPU:          choose two numbers of 17,19,21 with the smallest sum
