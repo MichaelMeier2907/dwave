@@ -1,4 +1,5 @@
 # two hot problem: two qbits out of three qbits
+# runs on the qpu
 # import
 from dwave.system import EmbeddingComposite, DWaveSampler
 # QUBO quadratic terms - 3 and couplers 2
