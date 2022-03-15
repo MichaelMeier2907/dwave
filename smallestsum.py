@@ -5,13 +5,14 @@
 # gamma = 21
 # QUBO = min(17 x0 + 19 x1 + 21 x2 - 63 x0 - 63 x1 - 63 x2 + 42 x0 x1 + 42 x0 x2 + 42 x1 x2)
 # QUBO = min (-46 x0 -44 x1 -42 x2 + 42 x0 x1 + 42 x0 x2 + 42 x1 x2)
+# QUBO = min (-23 x0 -22 x1 -21 x2 + 21 x0 x1 + 21 x0 x2 + 21 x1 x2)
 # runs on the exact solver
 # import
 import dimod
 # assign variable exactsolver
 exactsolver = dimod.ExactSolver()
-# QUBO a0 = -46, a1 = -44, a2 = -42, b01 = 42, b02 = 42 and b12 = 42
-Q = {(0,0):-46,(0,1):42,(0,2):42,(1,1):-44,(1,2):42,(2, 2):-42}
+# QUBO a0 = -23, a1 = -22, a2 = -21, b01 = 21, b02 = 21 and b12 = 21
+Q = {(0,0):-23,(0,1):21,(0,2):21,(1,1):-22,(1,2):21,(2, 2):-21}
 # assign results
 results = exactsolver.sample_qubo(Q)
 # print results
