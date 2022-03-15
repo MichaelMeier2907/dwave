@@ -15,8 +15,9 @@
 from dwave.system import EmbeddingComposite, DWaveSampler
 # QUBO a0 = -216, a1 = -142, a2 = -194, b01 = 142, b02 = 142 and b12 = 142
 Q = {(0,0):-216,(0,1):142,(0,2):142,(1,1):-142,(1,2):142,(2, 2):-194}
-# assign results
-results = exactsolver.sample_qubo(Q)
-# print results
-for sample, energy in (results.data(['sample', 'energy'])):
-  print(sample, energy)
+# run embedding sampler
+sampler = EmbeddingComposite(DWaveSampler())
+# assign to sampleset
+sampleset = sampler.sample_qubo(Q, num_reads = 10, label='Michael's Example - Smallest sum two of 7, 71, 29: QUBO')
+# print
+print(sampleset)
