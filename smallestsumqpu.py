@@ -9,12 +9,10 @@
 # runs on the exact solver
 # import
 from dwave.system import EmbeddingComposite, DWaveSampler
-# assign variable exactsolver
-exactsolver = dimod.ExactSolver()
 # QUBO a0 = -23, a1 = -22, a2 = -21, b01 = 21, b02 = 21 and b12 = 21
 Q = {(0,0):-23,(0,1):21,(0,2):21,(1,1):-22,(1,2):21,(2, 2):-21}
-# assign results
-results = exactsolver.sample_qubo(Q)
+# assign results from dwave sampler
+sampler = EmbeddingComposite(DWaveSampler())
 # print results
 for sample, energy in (results.data(['sample', 'energy'])):
   print(sample, energy)
