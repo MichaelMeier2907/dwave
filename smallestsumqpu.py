@@ -13,6 +13,7 @@ from dwave.system import EmbeddingComposite, DWaveSampler
 Q = {(0,0):-23,(0,1):21,(0,2):21,(1,1):-22,(1,2):21,(2, 2):-21}
 # assign results from dwave sampler
 sampler = EmbeddingComposite(DWaveSampler())
-# print results
-for sample, energy in (results.data(['sample', 'energy'])):
-  print(sample, energy)
+# assign to sampleset
+sampleset = sampler.sample_qubo(Q, num_reads = 10, label='Example - Simple Ocean Programs: QUBO')
+# print
+print(sampleset)
