@@ -8,7 +8,7 @@
 # QUBO = min (-23 x0 -22 x1 -21 x2 + 21 x0 x1 + 21 x0 x2 + 21 x1 x2)
 # runs on the exact solver
 # import
-import dimod
+from dwave.system import EmbeddingComposite, DWaveSampler
 # assign variable exactsolver
 exactsolver = dimod.ExactSolver()
 # QUBO a0 = -23, a1 = -22, a2 = -21, b01 = 21, b02 = 21 and b12 = 21
