@@ -18,6 +18,6 @@ Q = {(0,0):-216,(0,1):142,(0,2):142,(1,1):-142,(1,2):142,(2, 2):-194}
 # run embedding sampler
 sampler = EmbeddingComposite(DWaveSampler())
 # assign to sampleset
-sampleset = sampler.sample_qubo(Q, num_reads = 10, label='Michael's Example - Smallest sum two of 7, 71, 29: QUBO')
+sampleset = sampler.sample_qubo(Q, num_reads = 10, label='Michaels Example - Smallest sum two of 7, 71, 29: QUBO')
 # print
 print(sampleset)
