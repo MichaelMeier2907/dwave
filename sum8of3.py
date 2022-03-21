@@ -14,7 +14,7 @@
 # QUBO = min((c0 c0 - 2 c0 sum + 1 - 2 num) x0 + (c1 c1 - 2 c1 sum + 1 - 2 num) x1 + (c2 c2 - 2 c2 sum + 1 - 2 num) x2 + (c3 c3 - 2 c3 sum + 1 - 2 num) x3)
               + (c4 c4 - 2 c4 sum + 1 - 2 num) x4 + (2 c0 c1 + 2) x0 x1 + (2 c0 c2 + 2) x0 x2 + (2 c0 c3 + 2) x0 x3 + (2 c0 c4 + 2) x0 x4
               + (2 c1 c2 + 2) x1 x2 + (2 c1 c3 + 2) x1 x3 + (2 c1 c4 + 2) x1 x4 + (2 c2 c3 + 2) x2 x3 + (2 c2 c4 + 2) x2 x4 + (2 c0 c1 + 2) x3 x4
-# QUBO = min (- 8 x0 - 13 x1 - 32 x2 - 41 x3 - 48 x4
+# QUBO = min (- 20 x0 - 33 x1 - 44 x2 - 53 x3 - 60 x4 + 6 x0 x1 + 8 x0 x2 + 10 x0 x3 
 # QUBO = min (-23 x0 -22 x1 -21 x2 + 21 x0 x1 + 21 x0 x2 + 21 x1 x2)
 # runs on the exact solver
 # import
